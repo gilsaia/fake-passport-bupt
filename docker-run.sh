@@ -1,0 +1,1 @@
+sudo docker compose --file=docker-compose.yml up -d --force-recreate

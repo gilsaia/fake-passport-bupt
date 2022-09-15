@@ -181,6 +181,7 @@ app.get("/", (req, res) => {
         .replace('__school__', req.query?.school || (config?.isRandomIdentityEnabled ? getRandomSchool() : "<请填写学院>"))
         .replace('__type__', req.query?.type || (config?.isRandomIdentityEnabled ? '入' : "<请填写出入校类型>"))
         .replace('__id__', req.query?.id || (config?.isRandomIdentityEnabled ? getRandomId() : "<请填写学号>"))
+        .replace('__id__', req.query?.id || (config?.isRandomIdentityEnabled ? getRandomId() : "<请填写学号>"))
         .replace('__time__', date.toISOString().replace("T", " ").slice(0, -5))
       config?.alert && (htmlString = htmlString.replace('__alert__', config?.alert))
 

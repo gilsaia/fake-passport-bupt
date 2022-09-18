@@ -5,6 +5,7 @@ node_modules
 *.log
 *.jpg
 *.png
+*.jpeg
 logs
 .env
 .DS_Store

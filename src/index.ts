@@ -169,7 +169,7 @@ app.get("/", (req, res) => {
   }
 
 
-  fs.readFile(path.join(__dirname, "..", 'static', 'detail.html'), function (err, data) {
+  fs.readFile(path.join(__dirname, "..", 'static', '0918.html'), function (err, data) {
     if (err) {
       res.sendStatus(404);
     } else {
